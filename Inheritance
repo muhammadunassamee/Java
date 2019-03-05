@@ -1,0 +1,49 @@
+package inheritance;
+
+
+class Nokia1{
+
+    public void Camera()
+    {
+        System.out.println("Camera");
+    }
+
+}
+
+class Nokia2 extends Nokia1{
+
+    public void Touch()
+    {
+        System.out.println("Touch");
+    }
+
+}
+
+class Nokia3 extends Nokia2{
+
+    public void FrontCamera()
+    {
+        System.out.println("FrontCamera");
+    }
+
+}
+
+public class Inheritance  extends Nokia3{
+
+    public void FingerLock()
+    {
+        System.out.println("Finger Lock");
+    }
+    
+    public static void main(String[] args) {
+        
+        Inheritance obj = new Inheritance();
+    
+    obj.Camera();
+    obj.Touch();
+    obj.FrontCamera();
+    obj.FingerLock();
+        
+    }
+    
+}
